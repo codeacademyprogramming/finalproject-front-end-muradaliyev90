@@ -1,3 +1,4 @@
+@import './fonts/fonts';
 @import './variables/color';
 @import './variables/grid';
 @import './grid/grid';
@@ -28,7 +29,7 @@
                 @include text-style(24px,400,40px,white);
                 margin-bottom: 47px;
             }
-            .searc-input{
+            .search-input{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -462,6 +463,202 @@
                 margin-bottom: 41px;
                 @include text-style(24px,400,40px,$card-text-color);
             }
+        }
+    }
+}
+
+//search-page
+
+.login-navbar{
+    background-color: white;
+    >.navigation{
+        >.container{
+            >.menu{
+                .logged-user{
+                    display: flex;
+                    align-items: center;
+                    .image{
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        background-color: $bcgrnd-photo-color;
+                        margin-right: 20px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    span{
+                        @include text-style(16px,400,24px,#544E7A);
+                    }
+                    .arrow{
+                        img{
+                            padding: 3px 7px;
+                            transition: transform 0.3s ease;
+                        }
+                        img:hover{
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#search-course{
+    padding: 80px 0;
+    background-color: #EFEFF6;
+    margin-top: 108px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            @include text-style(40px,500,14px,$main-title-color);
+        }
+        .search-input{
+            position: relative;
+            input{
+                width: 885px;
+                height: 70px;
+                padding: 25px 30px;
+                font-size: 20px;
+                box-sizing: border-box;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                cursor: text;
+            }
+            a{
+                img{
+                    padding: 22px 37px;
+                    box-sizing: border-box;
+                    background-color: $main-button-color;
+                    border-radius: 0 5px 5px 0;
+                    position: absolute;
+                    right: 0px;
+                }
+            }
+        }
+    }
+}
+
+.popular-courses{
+    .top-container{
+        margin-bottom: 80px;
+        .content-navigation{
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            a{
+                display: inline-block;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+            >a{
+                padding: 14px 17px;
+                border: solid 1px #CAC6D4;
+                @include text-style(18px,500,24px,$card-text-color);
+                transition: border-color 0.2s ease-in-out;
+            }
+            >a:hover{
+                border-color: #F68C20;
+            }
+            .categorize{
+                img{
+                    padding: 3px;
+                    transition: transform 0.3s ease;
+                }
+                img:hover{
+                    transform: rotate(-90deg);
+                }
+            }
+            .filter{
+                img{
+                    margin-right: 14px;
+                }
+            }
+            .navs{
+                >a{
+                    margin-right: 22px;
+                    padding: 15px 21px;
+                    background-color: #EFEFF6;
+                    @include text-style(16px,400,24px,#544E7A);
+                    transition: background-color 0.2s ease-in-out;
+                }
+                >a:last-child{
+                    margin-right: 0;
+                }
+                >a:hover{
+                    background-color: #F68C20;
+                }
+            }
+        }
+    }
+    .learning-platform-info{
+        padding: 66px 0 66px 82px;
+        box-sizing: border-box;
+        background-image: linear-gradient(left, #FEF0EF 66%, transparent 66%, transparent 100%);
+        display: flex;
+        align-items: center;
+        .descr{
+            display: inline-block;
+            margin-right: 60px;
+            h1{
+                line-height: 48px;
+                margin-bottom: 41px;
+            }
+            .fa-check-square{
+                color: #43C8B1;
+                margin-right: 30px;
+            }
+            >div{
+                margin-bottom: 17px;
+                >span{
+                    @include text-style(24px,500,40px,$card-text-color);
+                }
+            }
+            >div:last-child{
+                margin-bottom: 34px;
+            }
+        }
+        .image{
+            display: inline-block;
+            width: 570px;
+            height: 468px;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #707070;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+#tutors{
+    padding: 80px;
+    .main-container{
+        margin-bottom: 80px;
+        .margin-bottom60{
+            margin-bottom: 60px;
+        }
+        .purple{
+            background-image: linear-gradient(bottom, #5E5881 71%, transparent 71%, transparent 100%);
+        }
+        .orange{
+            background-image: linear-gradient(bottom, #F68C20 71%, transparent 71%, transparent 100%);
+        }
+        .pink{
+            background-image: linear-gradient(bottom, #F56962 71%, transparent 71%, transparent 100%);
+        }
+        .gray{
+            background-image: linear-gradient(bottom, #91929A 71%, transparent 71%, transparent 100%);
         }
     }
 }

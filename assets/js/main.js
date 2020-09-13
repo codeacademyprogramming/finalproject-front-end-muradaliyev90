@@ -119,3 +119,27 @@ $(document).ready(function () {
         }
     })
 });
+
+$(document).ready(function () {
+    $('.educators-offer').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots:true,
+        autoplay:true,
+        navContainer: '.educators-offer-nav',
+        navElement: 'span',
+        navText: ['<img src="./assets/images/prevarray.svg" alt="">','<img src="./assets/images/nextarray.svg" alt="">'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            800: {
+                items: 2
+            },
+            1170: {
+                items: 3
+            }
+        }
+    })
+});

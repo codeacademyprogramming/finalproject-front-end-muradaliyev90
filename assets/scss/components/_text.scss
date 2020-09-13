@@ -1,7 +1,7 @@
 .main-title{
-    @include text-style(40px,500,24px,$main-title-color)    
+    @include text-style(40px,500,24px,$main-title-color);    
 }
 
 .card-text{
-    @include text-style(14px,400,25px,$card-text-color) 
+    @include text-style(14px,400,25px,$card-text-color); 
 }

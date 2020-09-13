@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Search page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/font-awesome/fontawesome.min.css">
 </head>
 
 <body>
-    <section class="header">
+    <section class="header login-navbar">
         <div class="navigation">
             <div class="container">
                 <div class="logo">
@@ -26,11 +26,12 @@
                 <div class="menu">
                     <nav>
                         <ul>
-                            <li><a href="./index.html">Home <img src="./assets/images/downwardarr.svg" alt="" class="rotated"></a>
+                            <li><a href="./index.html">Home <img src="./assets/images/downwardarr.svg" alt=""
+                                        class="rotated"></a>
                             </li>
                             <li><a href="">Pages <img src="./assets/images/downwardarr.svg" alt="" class="rotated"></a>
                             </li>
-                            <li><a href="./course-page.html">Courses <img src="./assets/images/downwardarr.svg" alt=""
+                            <li><a href="">Courses <img src="./assets/images/downwardarr.svg" alt=""
                                         class="rotated"></a></li>
                             <li><a href="">Features <img src="./assets/images/downwardarr.svg" alt=""
                                         class="rotated"></a></li>
@@ -40,517 +41,430 @@
                             </li>
                             <li><a href=""><img src="./assets/images/searchicon.svg" alt=""></a></li>
                             <li><a href=""><img src="./assets/images/shopping-cart.svg" alt=""></a></li>
-                            <li><a href="" class="main-button">Register</a></li>
+                            <div class="logged-user">
+                                <a href="" class="image">
+                                    <img src="" alt="">
+                                </a>
+                                <span>Abhinav</span>
+                                <a href="" class="arrow">
+                                    <img src="./assets/images/downwardarr.svg" alt="" class="rotated">
+                                </a>
+                            </div>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </section>
-    <section id="course-searching">
+    <section id="search-course">
         <div class="container">
-            <div class="course-info">
-                <h1>Learn new skills<br>online with<br>top educators</h1>
-                <p>Choose from over 100,000 online video<br>courses with new additions published every month</p>
-                <div class="search-input">
-                    <input type="text" placeholder="Search your favourite course">
-                    <a href=""><img src="./assets/images/searchicon2.svg" alt=""></a>
+            <span>Courses</span>
+            <div class="search-input">
+                <input type="text" placeholder="Search your favourite course">
+                <a href=""><img src="./assets/images/searchicon2.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="popular-courses bckgr-white">
+        <div class="container top-container">
+            <div class="content-navigation">
+                <a href="" class="categorize">Popular <img src="./assets/images/downwardarr.svg" alt=""></a>
+                <div class="navs">
+                    <a href="">All</a>
+                    <a href="">Design</a>
+                    <a href="">Business</a>
+                    <a href="">Marketing</a>
+                    <a href="">Photography</a>
+                    <a href="">Music</a>
+                </div>
+                <a href="" class="filter"><img src="./assets/images/filter.svg" alt=""> Filter</a>
+            </div>
+            <div class="cards">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="main-card">
+                            <a href="">
+                                <div class="main-img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="testimonials">
+                                <a href="">
+                                    <div class="rating centered">
+                                        <div class="img">
+                                            <img src="./assets/images/rating-star.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 4.5(120)</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="views centered">
+                                        <div class="img">
+                                            <img src="./assets/images/views-eye.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 28,500</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="videos centered">
+                                        <div class="img">
+                                            <img src="./assets/images/play-icon.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 36 Lession</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="">
+                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
+                            </a>
+                            <div class="price centered">
+                                <div class="tutor centered">
+                                    <a href="">
+                                        <div class="tutor-img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <span class="tutor-name">Nicole Brown</span>
+                                    </a>
+                                </div>
+                                <div class="pricing">
+                                    <a href="">
+                                        <span class="item-price">$99.99</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="discounted-price">$49.65</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="main-card">
+                            <a href="">
+                                <div class="main-img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="testimonials">
+                                <a href="">
+                                    <div class="rating centered">
+                                        <div class="img">
+                                            <img src="./assets/images/rating-star.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 4.5(120)</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="views centered">
+                                        <div class="img">
+                                            <img src="./assets/images/views-eye.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 28,500</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="videos centered">
+                                        <div class="img">
+                                            <img src="./assets/images/play-icon.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 36 Lession</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="">
+                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
+                            </a>
+                            <div class="price centered">
+                                <div class="tutor centered">
+                                    <a href="">
+                                        <div class="tutor-img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <span class="tutor-name">Nicole Brown</span>
+                                    </a>
+                                </div>
+                                <div class="pricing">
+                                    <a href="">
+                                        <span class="item-price">$99.99</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="discounted-price">$49.65</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="main-card">
+                            <a href="">
+                                <div class="main-img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="testimonials">
+                                <a href="">
+                                    <div class="rating centered">
+                                        <div class="img">
+                                            <img src="./assets/images/rating-star.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 4.5(120)</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="views centered">
+                                        <div class="img">
+                                            <img src="./assets/images/views-eye.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 28,500</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="videos centered">
+                                        <div class="img">
+                                            <img src="./assets/images/play-icon.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 36 Lession</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="">
+                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
+                            </a>
+                            <div class="price centered">
+                                <div class="tutor centered">
+                                    <a href="">
+                                        <div class="tutor-img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <span class="tutor-name">Nicole Brown</span>
+                                    </a>
+                                </div>
+                                <div class="pricing">
+                                    <a href="">
+                                        <span class="item-price">$99.99</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="discounted-price">$49.65</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="main-card">
+                            <a href="">
+                                <div class="main-img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="testimonials">
+                                <a href="">
+                                    <div class="rating centered">
+                                        <div class="img">
+                                            <img src="./assets/images/rating-star.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 4.5(120)</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="views centered">
+                                        <div class="img">
+                                            <img src="./assets/images/views-eye.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 28,500</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="videos centered">
+                                        <div class="img">
+                                            <img src="./assets/images/play-icon.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 36 Lession</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="">
+                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
+                            </a>
+                            <div class="price centered">
+                                <div class="tutor centered">
+                                    <a href="">
+                                        <div class="tutor-img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <span class="tutor-name">Nicole Brown</span>
+                                    </a>
+                                </div>
+                                <div class="pricing">
+                                    <a href="">
+                                        <span class="item-price">$99.99</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="discounted-price">$49.65</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="main-card">
+                            <a href="">
+                                <div class="main-img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="testimonials">
+                                <a href="">
+                                    <div class="rating centered">
+                                        <div class="img">
+                                            <img src="./assets/images/rating-star.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 4.5(120)</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="views centered">
+                                        <div class="img">
+                                            <img src="./assets/images/views-eye.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 28,500</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="videos centered">
+                                        <div class="img">
+                                            <img src="./assets/images/play-icon.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 36 Lession</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="">
+                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
+                            </a>
+                            <div class="price centered">
+                                <div class="tutor centered">
+                                    <a href="">
+                                        <div class="tutor-img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <span class="tutor-name">Nicole Brown</span>
+                                    </a>
+                                </div>
+                                <div class="pricing">
+                                    <a href="">
+                                        <span class="item-price">$99.99</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="discounted-price">$49.65</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="main-card">
+                            <a href="">
+                                <div class="main-img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="testimonials">
+                                <a href="">
+                                    <div class="rating centered">
+                                        <div class="img">
+                                            <img src="./assets/images/rating-star.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 4.5(120)</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="views centered">
+                                        <div class="img">
+                                            <img src="./assets/images/views-eye.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 28,500</span>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="videos centered">
+                                        <div class="img">
+                                            <img src="./assets/images/play-icon.svg" alt="">
+                                        </div>
+                                        <span class="card-text"> 36 Lession</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="">
+                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
+                            </a>
+                            <div class="price centered">
+                                <div class="tutor centered">
+                                    <a href="">
+                                        <div class="tutor-img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <span class="tutor-name">Nicole Brown</span>
+                                    </a>
+                                </div>
+                                <div class="pricing">
+                                    <a href="">
+                                        <span class="item-price">$99.99</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="discounted-price">$49.65</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="description-img">
+        </div>
+        <div class="container learning-platform-info">
+            <div class="descr">
+                <h1 class="main-title">Know about learning<br>learning platform</h1>
+                <div>
+                    <i class="far fa-check-square"></i>
+                    <span>Free E-book, Video & Consolation</span>
+                </div>
+                <div>
+                    <i class="far fa-check-square"></i>
+                    <span>Top instructors from around world</span>
+                </div>
+                <div>
+                    <i class="far fa-check-square"></i>
+                    <span>Top courses for your team.</span>
+                </div>
+                <a href="" class="main-button">Start learning now</a>
+            </div>
+            <div class="image">
                 <img src="" alt="">
             </div>
         </div>
     </section>
-    <section id="favourite-courses">
+    <section class="course-slider course-page-course-slider">
         <div class="container">
             <div class="title">
-                <h1 class="main-title">Choice favourite course from top category</h1>
-                <a href="" class="main-button">See all Categories</a>
-            </div>
-            <div class="cards">
-                <div class="row">
-                    <div class="col-2">
-                        <a href="">
-                            <div class="design">
-                                <img src="./assets/images/design.svg" alt="">
-                                <h3>Design</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="">
-                            <div class="development">
-                                <img src="./assets/images/development.svg" alt="">
-                                <h3>Development</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="">
-                            <div class="software">
-                                <img src="./assets/images/software.svg" alt="">
-                                <h3>IT & Software</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="">
-                            <div class="business">
-                                <img src="./assets/images/business.svg" alt="">
-                                <h3>Business</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="">
-                            <div class="marketing">
-                                <img src="./assets/images/marketing.svg" alt="">
-                                <h3>Marketing</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="">
-                            <div class="photography">
-                                <img src="./assets/images/photography.svg" alt="">
-                                <h3>Photography</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="course-choises">
-        <div class="container">
-            <div class="title">
-                <h1 class="main-title">Get choice of your course</h1>
-                <div class="title-buttons">
-                    <a href="">Design<img src="./assets/images/downwardarr.svg" alt="" class="rotated"></a>
-                    <a href="./course-page.html" class="main-button">View all</a>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="main-card">
-                            <a href="">
-                                <div class="main-img">
-                                    <img src="" alt="">
-                                </div>
-                            </a>
-                            <div class="testimonials">
-                                <a href="">
-                                    <div class="rating centered">
-                                        <div class="img">
-                                            <img src="./assets/images/rating-star.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 4.5(120)</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="views centered">
-                                        <div class="img">
-                                            <img src="./assets/images/views-eye.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 28,500</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="videos centered">
-                                        <div class="img">
-                                            <img src="./assets/images/play-icon.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 36 Lession</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <a href="">
-                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
-                            </a>
-                            <div class="price centered">
-                                <div class="tutor centered">
-                                    <a href="">
-                                        <div class="tutor-img">
-                                            <img src="" alt="">
-                                        </div>
-                                    </a>
-                                    <a href="">
-                                        <span class="tutor-name">Nicole Brown</span>
-                                    </a>
-                                </div>
-                                <div class="pricing">
-                                    <a href="">
-                                        <span class="item-price">$99.99</span>
-                                    </a>
-                                    <a href="">
-                                        <span class="discounted-price">$49.65</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="main-card">
-                            <a href="">
-                                <div class="main-img">
-                                    <img src="" alt="">
-                                </div>
-                            </a>
-                            <div class="testimonials">
-                                <a href="">
-                                    <div class="rating centered">
-                                        <div class="img">
-                                            <img src="./assets/images/rating-star.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 4.5(120)</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="views centered">
-                                        <div class="img">
-                                            <img src="./assets/images/views-eye.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 28,500</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="videos centered">
-                                        <div class="img">
-                                            <img src="./assets/images/play-icon.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 36 Lession</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <a href="">
-                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
-                            </a>
-                            <div class="price centered">
-                                <div class="tutor centered">
-                                    <a href="">
-                                        <div class="tutor-img">
-                                            <img src="" alt="">
-                                        </div>
-                                    </a>
-                                    <a href="">
-                                        <span class="tutor-name">Nicole Brown</span>
-                                    </a>
-                                </div>
-                                <div class="pricing">
-                                    <a href="">
-                                        <span class="item-price">$99.99</span>
-                                    </a>
-                                    <a href="">
-                                        <span class="discounted-price">$49.65</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="main-card">
-                            <a href="">
-                                <div class="main-img">
-                                    <img src="" alt="">
-                                </div>
-                            </a>
-                            <div class="testimonials">
-                                <a href="">
-                                    <div class="rating centered">
-                                        <div class="img">
-                                            <img src="./assets/images/rating-star.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 4.5(120)</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="views centered">
-                                        <div class="img">
-                                            <img src="./assets/images/views-eye.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 28,500</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="videos centered">
-                                        <div class="img">
-                                            <img src="./assets/images/play-icon.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 36 Lession</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <a href="">
-                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
-                            </a>
-                            <div class="price centered">
-                                <div class="tutor centered">
-                                    <a href="">
-                                        <div class="tutor-img">
-                                            <img src="" alt="">
-                                        </div>
-                                    </a>
-                                    <a href="">
-                                        <span class="tutor-name">Nicole Brown</span>
-                                    </a>
-                                </div>
-                                <div class="pricing">
-                                    <a href="">
-                                        <span class="item-price">$99.99</span>
-                                    </a>
-                                    <a href="">
-                                        <span class="discounted-price">$49.65</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="main-card">
-                            <a href="">
-                                <div class="main-img">
-                                    <img src="" alt="">
-                                </div>
-                            </a>
-                            <div class="testimonials">
-                                <a href="">
-                                    <div class="rating centered">
-                                        <div class="img">
-                                            <img src="./assets/images/rating-star.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 4.5(120)</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="views centered">
-                                        <div class="img">
-                                            <img src="./assets/images/views-eye.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 28,500</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="videos centered">
-                                        <div class="img">
-                                            <img src="./assets/images/play-icon.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 36 Lession</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <a href="">
-                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
-                            </a>
-                            <div class="price centered">
-                                <div class="tutor centered">
-                                    <a href="">
-                                        <div class="tutor-img">
-                                            <img src="" alt="">
-                                        </div>
-                                    </a>
-                                    <a href="">
-                                        <span class="tutor-name">Nicole Brown</span>
-                                    </a>
-                                </div>
-                                <div class="pricing">
-                                    <a href="">
-                                        <span class="item-price">$99.99</span>
-                                    </a>
-                                    <a href="">
-                                        <span class="discounted-price">$49.65</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="main-card">
-                            <a href="">
-                                <div class="main-img">
-                                    <img src="" alt="">
-                                </div>
-                            </a>
-                            <div class="testimonials">
-                                <a href="">
-                                    <div class="rating centered">
-                                        <div class="img">
-                                            <img src="./assets/images/rating-star.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 4.5(120)</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="views centered">
-                                        <div class="img">
-                                            <img src="./assets/images/views-eye.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 28,500</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="videos centered">
-                                        <div class="img">
-                                            <img src="./assets/images/play-icon.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 36 Lession</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <a href="">
-                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
-                            </a>
-                            <div class="price centered">
-                                <div class="tutor centered">
-                                    <a href="">
-                                        <div class="tutor-img">
-                                            <img src="" alt="">
-                                        </div>
-                                    </a>
-                                    <a href="">
-                                        <span class="tutor-name">Nicole Brown</span>
-                                    </a>
-                                </div>
-                                <div class="pricing">
-                                    <a href="">
-                                        <span class="item-price">$99.99</span>
-                                    </a>
-                                    <a href="">
-                                        <span class="discounted-price">$49.65</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="main-card">
-                            <a href="">
-                                <div class="main-img">
-                                    <img src="" alt="">
-                                </div>
-                            </a>
-                            <div class="testimonials">
-                                <a href="">
-                                    <div class="rating centered">
-                                        <div class="img">
-                                            <img src="./assets/images/rating-star.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 4.5(120)</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="views centered">
-                                        <div class="img">
-                                            <img src="./assets/images/views-eye.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 28,500</span>
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="videos centered">
-                                        <div class="img">
-                                            <img src="./assets/images/play-icon.svg" alt="">
-                                        </div>
-                                        <span class="card-text"> 36 Lession</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <a href="">
-                                <h1 class="course-name">AWS Certified Solutions Architect Associate</h1>
-                            </a>
-                            <div class="price centered">
-                                <div class="tutor centered">
-                                    <a href="">
-                                        <div class="tutor-img">
-                                            <img src="" alt="">
-                                        </div>
-                                    </a>
-                                    <a href="">
-                                        <span class="tutor-name">Nicole Brown</span>
-                                    </a>
-                                </div>
-                                <div class="pricing">
-                                    <a href="">
-                                        <span class="item-price">$99.99</span>
-                                    </a>
-                                    <a href="">
-                                        <span class="discounted-price">$49.65</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="our-support">
-        <div class="container">
-            <div class="title">
-                <h1 class="main-title">We will help you learn what you are passionates about</h1>
-            </div>
-            <div class="content">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="content-images">
-                            <div class="small">
-                                <img src="" alt="">
-                            </div>
-                            <div class="medium">
-                                <img src="" alt="">
-                            </div>
-                            <div class="large">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="content-info">
-                            <div class="descr">
-                                <span class="first-number">01.</span>
-                                <div class="descr-text">
-                                    <h1>Go at your own pace</h1>
-                                    <p>Find what you are intersted to learn online and choose what exactly best for you
-                                        that you really passionate to learn and get to study about it
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="descr">
-                                <span class="first-number">02.</span>
-                                <div class="descr-text">
-                                    <h1>Learn from industry experts</h1>
-                                    <p>Find what you are intersted to learn online and choose what exactly best for you
-                                        that you really passionate to learn and get to study about it
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="descr">
-                                <span class="first-number">03.</span>
-                                <div class="descr-text">
-                                    <h1>Find video courses on almost any topic</h1>
-                                    <p>Find what you are intersted to learn online and choose what exactly best for you
-                                        that you really passionate to learn and get to study about it
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="course-slider">
-        <div class="container">
-            <div class="title">
-                <h1 class="main-title">The world’s largest selection of courses</h1>
+                <h1 class="main-title">Recommended For You</h1>
                 <div class="title-buttons">
                     <a href="">Design <img src="./assets/images/downwardarr.svg" alt="" class="rotated"></a>
-                    <a href="./course-page.html" class="main-button">View all</a>
+                    <a href="" class="main-button">View all</a>
                 </div>
             </div>
             <div class="content">
-                <div class="owl-one owl-carousel owl-theme">
+                <div class="owl-get-choice owl-carousel owl-theme">
                     <div class="item">
                         <div class="main-card">
                             <a href="">
@@ -1132,227 +1046,170 @@
                         </div>
                     </div>
                 </div>
-                <div class="owl-one-nav owl-arrows">
+                <div class="owl-get-choice-nav owl-arrows">
                 </div>
             </div>
         </div>
     </section>
-    <section id="start">
-        <div class="container">
-            <h1 class="main-title">It's time to start investing in yourself in learning</h1>
-            <p>Match your goals to our programs, explore your options, and map out your
-                path to success. I plan to use skillfy for a long time!.</p>
-            <a href="" class="main-button">Get Started</a>
+    <section id="tutors">
+        <div class="container main-container">
+            <div class="title">
+                <h1 class="main-title">Classes Taught by Real Creators</h1>
+                <a href="" class="main-button">View all</a>
+            </div>
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-4 margin-bottom60">
+                        <div class="tutor-card">
+                            <div class="card-top"></div>
+                            <a href="">
+                                <div class="card-body">
+                                    <div class="main-image">
+                                        <div class="image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <h2>Yamilet Booker</h2>
+                                    <p>Learn Adobe Illustrator CC graphic design, logo design, and more with this
+                                        in-depth,
+                                        practical, easy-to-follow course!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-4 margin-bottom60">
+                        <div class="tutor-card">
+                            <div class="card-top"></div>
+                            <a href="">
+                                <div class="card-body">
+                                    <div class="main-image purple">
+                                        <div class="image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <h2>Aarav Lynn</h2>
+                                    <p>Learn Adobe Illustrator CC graphic design, logo design, and more with this
+                                        in-depth,
+                                        practical, easy-to-follow course!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 margin-bottom60">
+                        <div class="tutor-card">
+                            <div class="card-top"></div>
+                            <a href="">
+                                <div class="card-body">
+                                    <div class="main-image orange">
+                                        <div class="image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <h2>Demetri Caron</h2>
+                                    <p>Learn Adobe Illustrator CC graphic design, logo design, and more with this
+                                        in-depth,
+                                        practical, easy-to-follow course!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="tutor-card">
+                            <div class="card-top"></div>
+                            <a href="">
+                                <div class="card-body">
+                                    <div class="main-image orange">
+                                        <div class="image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <h2>Kiyan Dempsey</h2>
+                                    <p>Learn Adobe Illustrator CC graphic design, logo design, and more with this
+                                        in-depth,
+                                        practical, easy-to-follow course!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="tutor-card">
+                            <div class="card-top"></div>
+                            <a href="">
+                                <div class="card-body">
+                                    <div class="main-image pink">
+                                        <div class="image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <h2>Nikky Engelen</h2>
+                                    <p>Learn Adobe Illustrator CC graphic design, logo design, and more with this
+                                        in-depth,
+                                        practical, easy-to-follow course!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="tutor-card">
+                            <div class="card-top"></div>
+                            <a href="">
+                                <div class="card-body">
+                                    <div class="main-image gray">
+                                        <div class="image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <h2>Gracelyn Mason</h2>
+                                    <p>Learn Adobe Illustrator CC graphic design, logo design, and more with this
+                                        in-depth,
+                                        practical, easy-to-follow course!
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container user-special-review">
+            <div class="review">
+                <p>I believe in lifelong learning and Skillfy is a great place
+                    to learn from experts. I’ve
+                    learned a lot and recommend it to all my friends.
+                </p>
+                <span>Riaz Surti | Hearthy Foods</span>
+            </div>
+            <div class="photo">
+                <img src="" alt="" id="main-image">
+                <a href="">
+                    <img src="./assets/images/play-btn.svg" alt="" id="play">
+                </a>
+            </div>
         </div>
     </section>
-    <section id="studients-review">
+    <section id="educators-offer-slider">
         <div class="container">
             <div class="title">
-                <h1 class="main-title">What our students have to say</h1>
-                <div class="owl-two-nav owl-arrows"></div>
+                <h1 class="main-title">Top Education offers and deals are listed here</h1>
+                <a href="" class="main-button">View all</a>
             </div>
-            <div class="owl-two owl-carousel owl-theme">
-                <div class="item">
-                    <div class="review-card">
-                        <div class="user">
-                            <div class="img">
-                                <img src="" alt="">
+            <div class="content">
+                <div class="educators-offer owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="offer-card">
+                            <div class="card-content">
+                                
                             </div>
-                            <span>Rebecca Moore</span>
-                        </div>
-                        <div class="review">
-                            <p>Skillfy is a life saver. I don’t have the time money for a college education. My goal is
-                                to become a freelance web designer and thanks to Skillfy.</p>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="review-card">
-                        <div class="user">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                            <span>Samatha R. Oiler</span>
-                        </div>
-                        <div class="review">
-                            <p>Skillfy is a life saver. I don’t have the time money for a college education. My goal is
-                                to become a freelance web designer and thanks to Skillfy.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-card">
-                        <div class="user">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                            <span>Sarah D. Thomas</span>
-                        </div>
-                        <div class="review">
-                            <p>Skillfy is a life saver. I don’t have the time money for a college education. My goal is
-                                to become a freelance web designer and thanks to Skillfy.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-card">
-                        <div class="user">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                            <span>Some One1</span>
-                        </div>
-                        <div class="review">
-                            <p>Skillfy is a life saver. I don’t have the time money for a college education. My goal is
-                                to become a freelance web designer and thanks to Skillfy.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-card">
-                        <div class="user">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                            <span>Some One2</span>
-                        </div>
-                        <div class="review">
-                            <p>Skillfy is a life saver. I don’t have the time money for a college education. My goal is
-                                to become a freelance web designer and thanks to Skillfy.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-card">
-                        <div class="user">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                            <span>Some One3</span>
-                        </div>
-                        <div class="review">
-                            <p>Skillfy is a life saver. I don’t have the time money for a college education. My goal is
-                                to become a freelance web designer and thanks to Skillfy.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="our-partners">
-        <div class="container">
-            <div class="title">
-                <h1 class="main-title">Trusted by our awesome partners</h1>
-                <div class="owl-three-nav owl-arrows"></div>
-            </div>
-            <div class="owl-three owl-carousel owl-theme">
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="partner">
-                        <a href="">
-                            <div class="img">
-                                <img src="" alt="">
-                            </div>
-                        </a>
-                    </div>
+                <div class="educators-offer-nav owl-arrows">
                 </div>
             </div>
         </div>
