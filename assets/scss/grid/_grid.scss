@@ -1,0 +1,23 @@
+.row{
+    margin: 0 -#{$gutter-width};
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div[class^="col"] {
+    padding: 0 #{$gutter-width};
+    box-sizing: border-box;
+}
+
+@for $col-size from 1 through $col-count {
+    .col-#{$col-size}{
+        width: calc((100% / #{$col-count}) * #{$col-size});        
+    }
+}
+
+@for $col-offset-size from 1 through $col-count {
+    .col-offset-#{$col-offset-size}{
+        margin-left: calc((100% / #{$col-count}) * #{$col-offset-size});        
+    }
+}

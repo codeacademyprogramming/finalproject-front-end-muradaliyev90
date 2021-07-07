@@ -1,0 +1,23 @@
+.main-button{
+    @include text-style(18px,600,24px,white);
+    padding: 16px 23px;
+    background-color: $main-button-color;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+}
+
+.main-button:hover{
+    color: #F56962;
+    background-color: #33333D;
+}
+
+.owl-arrows{
+    span{
+        padding: 14px;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
